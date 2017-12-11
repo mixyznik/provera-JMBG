@@ -1,3 +1,13 @@
+
+.text-info {
+    font-weight: bold;
+   
+}
 body {
-    background-color: aqua;
+   background-image: url("../srbija.jpg");
+   background-size:     cover;                     
+    background-repeat:   no-repeat;
+}
+.jumbotron {
+    margin-top: 50px;
 }
