@@ -1,23 +1,20 @@
 var box = document.getElementById("vrednost");
 
 function opa() {
-     document.getElementById("upis").innerHTML = " ";
-    document.getElementById("upis1").innerHTML = " ";
-    document.getElementById("upis2").innerHTML = " ";
-     document.getElementById("upis3").innerHTML = " ";
+    document.getElementById("upis").innerHTML = " ";
+   
+    document.getElementById("upis3").innerHTML = " ";
     document.getElementById("upis4").innerHTML = " ";
     
     
     var x = box.value;
     
-    if (x.length==13) {
-       document.getElementById("text").innerHTML = "ok";   }
-        
-   else if (x.length>13) {
+   
+   if (x.length>13) {
       document.getElementById("text").innerHTML = "imate vise od 13 cifara";   
        return x; 
     }
-    else if (x.length<13) {
+    if (x.length<13) {
        document.getElementById("text").innerHTML = "imate manje od 13 cifara"; 
         return x;
     }
@@ -32,11 +29,11 @@ function opa() {
 
      if (m==1) {
 
-       document.getElementById("text").innerHTML = "nije ispravan broj";
+       document.getElementById("text").innerHTML = "Nije ispravan broj";
          return x;
     }
     else {
-       document.getElementById("text").innerHTML = "maticni broj je validan"; 
+       document.getElementById("text").innerHTML = "Matični broj je validan"; 
     }
    
     
@@ -64,21 +61,19 @@ function opa() {
       document.getElementById("text").innerHTML = "neispravan datum rodjenja";  
         return x;
         }
-    else {
-         document.getElementById("upis").innerHTML = "datum rodjenja"+ " " +dd+".";  
-    }
+   
+    
     if (mm>12) {
       document.getElementById("text").innerHTML = "neispravan mesec rodjenja";
         return mm;
         }
-    else {
-        document.getElementById("upis1").innerHTML = "mesec rodjenja"+ " " +mm+".";  
-    }
+    
+    
     if (ggg>900) {
-    document.getElementById("upis2").innerHTML = "godina rodjenja"+ " "+1 +ggg+".";  
+    document.getElementById("upis").innerHTML = "Datum rodjenja"+ " "+dd+"." +mm+"." +1 +ggg+".";  
     }
     else if (ggg>=0&&ggg<17) {
-      document.getElementById("upis2").innerHTML = "godina rodjenja"+ " "+2 +GGG+".";    
+      document.getElementById("upis").innerHTML = "Datum rodjenja"+ " "+dd+"." +mm+"."  +2 +GGG+".";    
     }
     
         
@@ -90,13 +85,36 @@ function opa() {
        document.getElementById("upis3").innerHTML = "Šumadija i Pomoravlje region";   
     }
     
+     if (rr==73) {
+       document.getElementById("upis3").innerHTML = "Niš region";   
+    }
+    
+     if (rr==74) {
+       document.getElementById("upis3").innerHTML = "Južna Morava region";   
+    }
+       if (rr==75) {
+       document.getElementById("upis3").innerHTML = "Zaječar region";   
+    }
+       if (rr==76) {
+       document.getElementById("upis3").innerHTML = "Podunavlje region";   
+    }
+       if (rr==77) {
+       document.getElementById("upis3").innerHTML = "Podrinje i Kolubara region";   
+    }
+       if (rr==78) {
+       document.getElementById("upis3").innerHTML = "Kraljevo region";   
+    }
+      if (rr==79) {
+       document.getElementById("upis3").innerHTML = "Užice region";   
+    }
 
+    
 
     if (bbb<=499){
-         document.getElementById("upis4").innerHTML = "pol: muski";   
+         document.getElementById("upis4").innerHTML = "Pol: muski";   
     }
     else {
-        document.getElementById("upis4").innerHTML = "pol: zenski";   
+        document.getElementById("upis4").innerHTML = "Pol: zenski";   
     }
     
    
